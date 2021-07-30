@@ -1,11 +1,11 @@
 {
   "root": true,
   "api": {
-    "projectId": "PLACEHOLDER_ENV_VARIABLES_WILL_HANDLE_FOR_US",
-    "dataset": "PLACEHOLDER_ENV_VARIABLES_WILL_HANDLE_FOR_US"
+    "projectId": "4vxqvjo4",
+    "dataset": "production"
   },
   "project": {
-    "name": "Next.js Comment-enabled blog",
+    "name": "Indino",
     "basePath": "/studio"
   },
   "plugins": [
@@ -17,9 +17,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
