@@ -8,7 +8,6 @@ import Comments from "../../components/comments";
 import SectionSeparator from "../../components/section-separator";
 import Layout from "../../components/layout";
 import {
-  getAllPostsWithSlug,
   getAllPostsWithSlugAndCategory,
   getPostAndMorePosts,
 } from "../../lib/api";
@@ -18,8 +17,7 @@ import Form from "../../components/form";
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
-  const { query } = router;
-  console.log(query);
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }

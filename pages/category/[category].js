@@ -27,6 +27,11 @@ export default function Category({ posts }) {
             {capitalize(query.category)}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+            {filteredPosts?.length === 0 && (
+              <div className=" backdrop-filter backdrop-blur-lg md:backdrop-blur-lg">
+                No post yet
+              </div>
+            )}
             {filteredPosts?.map((post) => (
               <PostPreview
                 key={post.slug}
@@ -46,8 +51,6 @@ export default function Category({ posts }) {
 
 export async function getStaticProps() {
   const data = await getAllPosts();
-  //   console.log("YOOOOO");
-  //   console.log(data);
   return {
     props: {
       posts: data,

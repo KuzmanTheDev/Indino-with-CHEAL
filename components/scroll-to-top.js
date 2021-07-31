@@ -12,7 +12,7 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 800) {
+      if (window.pageYOffset > 1000) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -31,6 +31,11 @@ export default function ScrollToTop() {
           className=" fixed z-50 bottom-10 right-10 shadow-md cursor-pointer bg-transparent rounded-full h-14 w-14 flex items-center justify-center "
           onClick={scrollToTop}
         >
+          {/* <i
+            class="fa fa-angle-double-down fa-stack-1x"
+            style="backgroundColor: transparent;, color: black"
+          ></i> */}
+          {/* <img src="/arrow up.png" alt="Scroll up icon" /> */}
           <h3>Up!</h3>
         </div>
       )}
