@@ -17,7 +17,7 @@ export default function Category() {
   ];
   return (
     <div>
-      <section className="flex flex-row justify-evenly p-3 m-5  overflow-x-auto">
+      <section className="flex flex-row justify-evenly p-3 m-5 overflow-x-auto">
         {categoryArray.map((category) => {
           return (
             <Link
