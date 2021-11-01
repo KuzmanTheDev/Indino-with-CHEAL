@@ -3,7 +3,7 @@ import Header from "./header";
 import Meta from "./meta";
 import ScrollToTop from "./scroll-to-top";
 
-export default function Layout({ preview, children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Header />
