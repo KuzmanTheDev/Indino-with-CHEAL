@@ -19,7 +19,7 @@ export default function PostPreview({
           url={imageBuilder(coverImage).url()}
         />
       </div>
-      <h3 className="text-xl font-semibold mb-3 leading-snug">
+      <h3 className="text-xl font-semibold mb-3 leading-snug" style={{fontWeight: "600"}}>
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
